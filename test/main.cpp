@@ -1,9 +1,16 @@
+#define CATCH_CONFIG_MAIN
+#include "catch.hpp"
 #include "test-codecov/sample.hpp"
 
-int main()
+TEST_CASE("sample")
 {
     Test t;
-    int test = t.headerFunction(1);
-    
-    int otherTest = t.cppFunction(5);
+    SECTION("headerFunction")
+    {
+        REQUIRE(t.headerFunction(1) == 7);
+    }
+    SECTION("cppFunction")
+    {
+        REQUIRE(t.cppFunction(5) == 6);
+    }
 }

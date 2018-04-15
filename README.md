@@ -24,7 +24,7 @@ make # make test is also available
 make coverage
 ```
 
-Running the code as it is above should result in complete coverage (60%). Now try the following changes:
+Running the code as it is above should result in a compilation freeze (The expected coverage is 60%). Now try the following changes:
 
 In `CMakeLists.txt`, change:
 
